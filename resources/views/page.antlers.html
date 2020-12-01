@@ -2,6 +2,7 @@
     {{ svg src="/assets/site/scratches" class="absolute text-gray-800 mt-8 top-0 left-0 w-20 hidden md:block" }}
     <article class="py-32 max-w-2xl mx-auto content">
         <h1>{{ title }}</h1>
+        <img src="{{ glide:image format='webp' width='80' height='150' }}" alt="{{ image:alt }}">
         {{ content | widont }}
     </article>
 </div>

@@ -1,5 +1,7 @@
-data: {  }
-size: 76240
-last_modified: 1579206544
+data:
+  alt: 'Das bin ich'
+  focus: 50-39-1
+size: 66884
+last_modified: 1606774529
 width: 1500
 height: 750
