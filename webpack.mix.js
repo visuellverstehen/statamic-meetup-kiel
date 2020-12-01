@@ -27,3 +27,22 @@ if (mix.inProduction()) {
     whitelistPatternsChildren: [/^content$/],
   });
 }
+
+if (! mix.inProduction()) {
+  mix.browserSync({
+    proxy: 'https://statamic-meetup-kiel.test',
+    notify: false,
+    open: false,
+    https: true,
+    files: [
+      'app/**/*',
+      'public/**/*',
+      'resources/views/**/*',
+      'resources/css/**/*',
+      'resources/js/**/*',
+      'resources/lang/**/*',
+      'routes/**/*'
+    ],
+  });
+}
+
